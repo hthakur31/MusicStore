@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Add New Song</h2>
+<form method="post">
+    Title: <input type="text" name="title"><br>
+    Artist: <input type="text" name="artist"><br>
+    Price: <input type="number" step="0.01" name="price"><br>
+    <button type="submit">Add Song</button>
+</form>
+{% endblock %}

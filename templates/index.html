@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Available Songs</h2>
+<ul>
+    {% for song in songs %}
+        <li>{{ song[1] }} by {{ song[2] }} - ${{ song[3] }}
+            {% if session.get('user_id') %}
+                <a href="/purchase/{{ song[0] }}">Buy</a>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

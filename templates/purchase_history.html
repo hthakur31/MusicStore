@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>My Purchase History</h2>
+<ul>
+    {% for item in purchases %}
+        <li>{{ item[0] }} by {{ item[1] }} - ${{ item[2] }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

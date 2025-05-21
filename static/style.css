@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    padding : 20px;
+    background-color : rgb(55, 178, 255);
+
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    background-color: aliceblue;
+    color: black;
+    padding : 10px;
+    border-radius: 8px;
+    font-weight: 600;
+
+}
+.content {
+    margin-top: 20px;
+    
+}
